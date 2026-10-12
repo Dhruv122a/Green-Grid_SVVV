@@ -18,10 +18,10 @@ export const Route = createFileRoute("/_app/settings")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Settings — EcoCampus AI" },
+      { title: "Settings — Green-Grid_SVVV AI" },
       { name: "description", content: "Profile, college details, resource targets and notification preferences." },
-      { property: "og:title", content: "Settings — EcoCampus AI" },
-      { property: "og:description", content: "Configure EcoCampus AI for your campus." },
+      { property: "og:title", content: "Settings — Green-Grid_SVVV AI" },
+      { property: "og:description", content: "Configure Green-Grid_SVVV AI for your campus." },
     ],
   }),
   component: Settings,

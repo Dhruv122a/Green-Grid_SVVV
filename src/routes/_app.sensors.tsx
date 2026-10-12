@@ -10,9 +10,9 @@ import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/_app/sensors")({
   head: () => ({ meta: [
-    { title: "Sensor Monitor — EcoCampus AI" },
+    { title: "Sensor Monitor — Green-Grid_SVVV AI" },
     { name: "description", content: "Simulated campus temperature, humidity, electricity and water-flow monitoring with actionable sustainability alerts for KAUSHAL 8.0 PS-04." },
-    { property: "og:title", content: "Sensor Monitor — EcoCampus AI" },
+    { property: "og:title", content: "Sensor Monitor — Green-Grid_SVVV AI" },
     { property: "og:description", content: "Detect heat, wasted energy and potential leaks using a transparent software-only sensor demonstration." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },

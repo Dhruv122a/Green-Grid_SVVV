@@ -12,9 +12,9 @@ export const Route = createFileRoute("/_app/leaderboard")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Department Leaderboard — EcoCampus AI" },
+      { title: "Department Leaderboard — Green-Grid_SVVV AI" },
       { name: "description", content: "Fair, per-person comparison of departments on consumption, recycling, improvement and verified actions." },
-      { property: "og:title", content: "Department Leaderboard — EcoCampus AI" },
+      { property: "og:title", content: "Department Leaderboard — Green-Grid_SVVV AI" },
       { property: "og:description", content: "Which campus department is the most sustainable this week?" },
     ],
   }),

@@ -1,8 +1,8 @@
-# EcoCampus Insights
+# Green-Grid_SVVV Insights
 
-Build a Complete Full-Stack Website: EcoCampus AI
+Build a Complete Full-Stack Website: Green-Grid_SVVV AI
 
-Act as a senior full-stack developer, UI/UX designer, and sustainability technology expert. Build a modern, responsive, functional website called EcoCampus AI — Smart Campus Sustainability Platform for the KAUSHAL 8.0 hackathon, problem statement PS-04: Sustainable Tech Without Limits.
+Act as a senior full-stack developer, UI/UX designer, and sustainability technology expert. Build a modern, responsive, functional website called Green-Grid_SVVV — Smart Campus Sustainability Platform for the KAUSHAL 8.0 hackathon, problem statement PS-04: Sustainable Tech Without Limits.
 
 1. Project Objective
 
@@ -58,7 +58,7 @@ A. Landing Page
 
 Create a professional landing page featuring:
 
-Brand name: EcoCampus AI.
+Brand name: Green-Grid_SVVV AI.
 
 Tagline: "Make Every Campus Resource Count."
 
@@ -356,7 +356,7 @@ Do not leave TypeScript errors, broken imports, nonfunctional buttons, or fake i
 
 Final Goal
 
-Deliver a polished and working EcoCampus AI MVP that demonstrates how technology can help colleges measure resource consumption, identify wastage, and take practical steps toward sustainability.
+Deliver a polished and working Green-Grid_SVVV AI MVP that demonstrates how technology can help colleges measure resource consumption, identify wastage, and take practical steps toward sustainability.
 
 The application should be easy to understand, easy to demonstrate, technically credible, and appropriate for the KAUSHAL 8.0 PS-04 hackathon.
 

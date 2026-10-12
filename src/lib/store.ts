@@ -6,7 +6,7 @@ import type { AppState } from "./types";
  * Demo-mode data store (browser localStorage). No backend is connected,
  * so all data stays in this browser and is clearly labeled as demo data.
  */
-const KEY = "ecocampus-demo-v1";
+const KEY = "Green-Grid_SVVV-demo-v1";
 let state: AppState | null = null;
 const listeners = new Set<() => void>();
 

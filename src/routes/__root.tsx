@@ -67,9 +67,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "EcoCampus AI — Smart Campus Sustainability Platform" },
+      { title: "Green-Grid_SVVV AI — Smart Campus Sustainability Platform" },
       { name: "description", content: "Track electricity, water, waste and paper use across your college and get practical ways to cut waste." },
-      { property: "og:title", content: "EcoCampus AI — Smart Campus Sustainability Platform" },
+      { property: "og:title", content: "Green-Grid_SVVV AI — Smart Campus Sustainability Platform" },
       { property: "og:description", content: "Track campus resources, spot wastage and get practical sustainability recommendations." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

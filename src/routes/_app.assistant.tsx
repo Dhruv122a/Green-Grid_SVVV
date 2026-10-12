@@ -17,9 +17,9 @@ export const Route = createFileRoute("/_app/assistant")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Sustainability Assistant — EcoCampus AI" },
+      { title: "Sustainability Assistant — Green-Grid_SVVV AI" },
       { name: "description", content: "Rule-based analysis of campus consumption with transparent savings estimates and an action plan." },
-      { property: "og:title", content: "Sustainability Assistant — EcoCampus AI" },
+      { property: "og:title", content: "Sustainability Assistant — Green-Grid_SVVV AI" },
       { property: "og:description", content: "Find unusual consumption and build a sustainability action plan." },
     ],
   }),

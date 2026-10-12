@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "EcoCampus AI — Make Every Campus Resource Count" },
+      { title: "Green-Grid_SVVV AI — Make Every Campus Resource Count" },
       {
         name: "description",
         content:
@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "EcoCampus AI — Make Every Campus Resource Count",
+        content: "Green-Grid_SVVV AI — Make Every Campus Resource Count",
       },
       {
         property: "og:description",
@@ -134,7 +134,7 @@ function Landing() {
             <p className="mt-4 max-w-lg text-muted-foreground">
               Colleges lose energy to empty lit classrooms, water to unnoticed
               leaks and paper to habit printing — mostly because no one sees
-              the numbers. EcoCampus AI makes usage visible, flags wastage and
+              the numbers. Green-Grid_SVVV AI makes usage visible, flags wastage and
               turns it into clear actions.
             </p>
 

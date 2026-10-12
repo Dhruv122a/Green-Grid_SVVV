@@ -17,9 +17,9 @@ export const Route = createFileRoute("/_app/reports")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Reports — EcoCampus AI" },
+      { title: "Reports — Green-Grid_SVVV AI" },
       { name: "description", content: "Daily, weekly and monthly campus sustainability reports with CSV export and print layout." },
-      { property: "og:title", content: "Reports — EcoCampus AI" },
+      { property: "og:title", content: "Reports — Green-Grid_SVVV AI" },
       { property: "og:description", content: "Resource summaries, score trends and department comparisons." },
     ],
   }),
@@ -62,8 +62,8 @@ function Reports() {
       <PageHeader title={`${label} Report`} description={`Greenfield Institute of Technology · generated ${new Date().toLocaleString("en-IN")}`}
         actions={<>
           <Tabs value={kind} onValueChange={(v) => setKind(v as keyof typeof CFG)}><TabsList><TabsTrigger value="daily">Daily</TabsTrigger><TabsTrigger value="weekly">Weekly</TabsTrigger><TabsTrigger value="monthly">Monthly</TabsTrigger></TabsList></Tabs>
-          <Button variant="outline" onClick={() => { downloadCSV(`ecocampus-${kind}-report.csv`, d.rows); toast.success("Report CSV downloaded"); }}><Download className="mr-1 h-4 w-4" />Export CSV</Button>
-          <Button variant="outline" onClick={() => { downloadCSV(`ecocampus-${kind}-summary.csv`, d.summary); toast.success("Summary CSV downloaded"); }}><Download className="mr-1 h-4 w-4" />Summary CSV</Button>
+          <Button variant="outline" onClick={() => { downloadCSV(`Green-Grid_SVVV-${kind}-report.csv`, d.rows); toast.success("Report CSV downloaded"); }}><Download className="mr-1 h-4 w-4" />Export CSV</Button>
+          <Button variant="outline" onClick={() => { downloadCSV(`Green-Grid_SVVV-${kind}-summary.csv`, d.summary); toast.success("Summary CSV downloaded"); }}><Download className="mr-1 h-4 w-4" />Summary CSV</Button>
           <Button onClick={() => window.print()}><Printer className="mr-1 h-4 w-4" />Print</Button>
         </>} />
       <DemoBadge className="mb-4" />

@@ -21,9 +21,9 @@ export const Route = createFileRoute("/_app/waste")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Waste Management — EcoCampus AI" },
+      { title: "Waste Management — Green-Grid_SVVV AI" },
       { name: "description", content: "Record campus waste by category, track recycling rates and waste trends." },
-      { property: "og:title", content: "Waste Management — EcoCampus AI" },
+      { property: "og:title", content: "Waste Management — Green-Grid_SVVV AI" },
       { property: "og:description", content: "Waste segregation, recycling rate and disposal tracking." },
     ],
   }),

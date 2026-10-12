@@ -17,9 +17,9 @@ export const Route = createFileRoute("/_app/dashboard")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Dashboard — EcoCampus AI" },
+      { title: "Dashboard — Green-Grid_SVVV AI" },
       { name: "description", content: "Campus electricity, water, waste and paper metrics with sustainability score and wastage alerts." },
-      { property: "og:title", content: "Dashboard — EcoCampus AI" },
+      { property: "og:title", content: "Dashboard — Green-Grid_SVVV AI" },
       { property: "og:description", content: "Live campus sustainability metrics, trends and alerts." },
     ],
   }),

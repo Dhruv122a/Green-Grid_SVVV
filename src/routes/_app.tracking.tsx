@@ -21,9 +21,9 @@ export const Route = createFileRoute("/_app/tracking")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Resource Tracking — EcoCampus AI" },
+      { title: "Resource Tracking — Green-Grid_SVVV AI" },
       { name: "description", content: "Record and manage electricity, water, waste and paper consumption by department." },
-      { property: "og:title", content: "Resource Tracking — EcoCampus AI" },
+      { property: "og:title", content: "Resource Tracking — Green-Grid_SVVV AI" },
       { property: "og:description", content: "Log campus resource readings and review records." },
     ],
   }),

@@ -3,7 +3,7 @@ import type { Lang } from "./campus-devices";
 
 export type Theme = "light" | "dark";
 interface Prefs { theme: Theme; lang: Lang }
-const KEY = "ecocampus-prefs-v1";
+const KEY = "Green-Grid_SVVV-prefs-v1";
 const DEFAULT: Prefs = { theme: "light", lang: "en" };
 let prefs: Prefs | null = null;
 const listeners = new Set<() => void>();
