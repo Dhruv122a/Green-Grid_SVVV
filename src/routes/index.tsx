@@ -1,11 +1,19 @@
-
+import logo from "@/assets/Eco-Tech Lotus Book Emblem.png";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Bot, Gauge, Leaf, LineChart, Recycle } from "lucide-react";
-import { useMemo } from "react";
-import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis } from "recharts";
+import { ArrowRight, Bot, Gauge, LineChart, Recycle } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import {
+  Area,
+  AreaChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+} from "recharts";
 import { Button } from "@/components/ui/button";
 import { DemoBadge } from "@/components/app/ui-bits";
 import heroImg from "@/assets/campus-hero.jpg";
+import campusImg2 from "@/assets/svvv-campus-hero.webp";
+import campusImg3 from "@/assets/campus-green.webp";
 import { useAppState } from "@/lib/store";
 import {
   allEntries,
@@ -65,8 +73,19 @@ const FEATURES = [
   },
 ];
 
+const HERO_SLIDES = [campusImg2, heroImg, campusImg3];
+
 function Landing() {
   const s = useAppState();
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setCurrentSlide((current) => (current + 1) % HERO_SLIDES.length);
+    }, 3500);
+
+    return () => window.clearInterval(timer);
+  }, []);
 
   const stats = useMemo(() => {
     const e = allEntries(s);
@@ -84,9 +103,11 @@ function Landing() {
       {/* Header */}
       <header className="flex w-full items-center justify-between px-5 py-5">
         <div className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-            <Leaf className="h-5 w-5" />
-          </span>
+          <img
+            src={logo}
+            alt="Green Grid SVVV Logo"
+            className="h-11 w-11 shrink-0 object-contain"
+          />
 
           <span className="font-display text-lg font-semibold">
             Green-Grid_SVVV
@@ -131,13 +152,51 @@ function Landing() {
             </div>
           </div>
 
-          <img
-            src={heroImg}
-            alt="Illustration of a green college campus with solar panels and recycling bins"
-            width={1408}
-            height={896}
-            className="w-full rounded-3xl shadow-card"
-          />
+          {/* Automatic Sliding Campus Images */}
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-card">
+            <div
+              className="flex h-full w-full transition-transform duration-700 ease-in-out motion-reduce:transition-none"
+              style={{
+                width: `${HERO_SLIDES.length * 100}%`,
+                transform: `translateX(-${
+                  (currentSlide * 100) / HERO_SLIDES.length
+                }%)`,
+              }}
+            >
+              {HERO_SLIDES.map((image, index) => (
+                <div
+                  key={image}
+                  className="h-full shrink-0"
+                  style={{ width: `${100 / HERO_SLIDES.length}%` }}
+                >
+                  <img
+                    src={image}
+                    alt={`Sustainable campus view ${index + 1}`}
+                    className="h-full w-full object-cover"
+                    loading={index === 0 ? "eager" : "lazy"}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Slide indicators */}
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+              {HERO_SLIDES.map((image, index) => (
+                <button
+                  key={image}
+                  type="button"
+                  aria-label={`Show campus image ${index + 1}`}
+                  aria-current={currentSlide === index ? "true" : undefined}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    currentSlide === index
+                      ? "w-7 bg-white"
+                      : "w-2.5 bg-white/60 hover:bg-white/90"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

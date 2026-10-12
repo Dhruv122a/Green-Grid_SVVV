@@ -44,16 +44,24 @@ function NavList({ onNavigate }: { onNavigate?: () => void }) {
   );
 }
 
+import logo from "@/assets/Eco-Tech Lotus Book Emblem.png";
+
 function Brand() {
   return (
-    <Link to="/" className="flex items-center gap-2">
-      <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-sidebar-primary text-sidebar-primary-foreground">
-        <Leaf className="h-5 w-5" />
+    <Link to="/" className="flex items-center gap-3">
+      <img
+        src={logo}
+        alt="Green Grid SVVV Logo"
+        className="h-11 w-11 shrink-0 rounded-full object-contain"
+      />
+
+      <span className="font-display text-lg font-semibold text-sidebar-accent-foreground">
+        Green-Grid_SVVV
       </span>
-      <span className="font-display text-lg font-semibold text-sidebar-accent-foreground">Green-Grid_SVVV</span>
     </Link>
   );
 }
+
 
 const STEPS: { text: string; to: (typeof NAV)[number]["to"] }[] = [
   { text: "Open Sensor Monitor and simulate a heat spike or water leak", to: "/sensors" },
